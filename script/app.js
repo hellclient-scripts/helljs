@@ -60,7 +60,7 @@ App.Load=function(name){
 App.Start=function(){
     App.Init()
     // App.Load("ui/ui.js")
-    // App.Load("param/param.js")
+    App.Load("param/param.js")
     App.Load("core/core.js")
     // App.Load("info/info.js")
     // App.Load("alias/alias.js")
