@@ -3,7 +3,7 @@
     Metronome.setinterval(app.GetNumberParam("cmdinterval"))
     var _linesre = new RegExp("[^;\n]+", "g");
     var _groupre=new RegExp("[;\n]", "g");
-    var _cmdsre = new RegExp("[^、。]+", "g");
+    var _cmdsre = re=/(?:、|·|。)/
     app.Commands={}
     //注册回调为命令
     app.RegisterCommand=function(name,callback){

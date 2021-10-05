@@ -1,6 +1,6 @@
 (function(app){
     app.Data.Room={
-        ID:-1,
+        ID:"",
         Name:"",
         Objs:[],
     }
