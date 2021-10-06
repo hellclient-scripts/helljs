@@ -3,6 +3,7 @@
     let locate = Include("core/move/locate.js")
     let patrol = Include("core/move/patrol.js")
     let walk = Include("core/move/walk.js")
+    let drive = Include("core/move/drive.js")
     app.NewMove = function (mode, target, onFinish, data) {
         switch (mode) {
             case "locate":
@@ -12,6 +13,10 @@
                 return new patrol(mode, target, onFinish, data)
             case "walk":
                 return new walk(mode, target, onFinish, data)
+            case "ganbiao":
+                let w=new drive(mode, target, onFinish, data)
+                w.Command="gan biao che to "
+                return w
             default:
                 throw "app.Move:Mode[" + walk.Mode + "]无效"
         }
@@ -40,7 +45,11 @@
         }
         return true
     })
-
+    app.RegisterCallback("core.move.nobusy", function () {
+        if (app.Data.Move && !app.Data.Move.Paused) {
+            app.Data.Move.Move()
+        }
+    })
     app.Bind("OnRoomEnd", "core.move.onroomobjend")
     app.OnMoveStepTimeout = function (name) {
         if (app.Data.Move && !app.Data.Move.Paused) {
@@ -64,15 +73,5 @@
         app.Raise("Waiting")
     })
     app.RegisterCommand("sail","core.move.sail")
-    app.RegisterCallback("core.move.lost",function(move){
-        app.NewMove("locate",5,"core.move.walkagain",{Data:move}).Start()
-    })
-    app.RegisterCallback("core.move.walkagain",function(move){
-        world.Note("walkagain")
-        if (move){
-            move.Start()
-        }
-    })
-    app.Bind("MoveLost","core.move.lost")
 
 })(App)

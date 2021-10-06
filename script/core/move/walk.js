@@ -66,7 +66,7 @@
             this.Move()
         }
         this.Retry=function(){
-            world.DoAfterSpecial(0.1, 'App.Data.Move.RetryMove()', 12);
+            world.DoAfterSpecial(0.5, 'App.Data.Move.RetryMove()', 12);
         }
         this.RetryMove=function(){
             this.TryMove(this.Context.NextStep())
@@ -76,6 +76,7 @@
                 this.Ignore=false
                 return;
             }
+            app.Raise("MoveArrive",this.Context.NextStep())
             this.Context.Arrive()
             if (!this.Paused && this.OnStep) {
                 app.ExecuteCallback(this.OnStep, this.StepData)

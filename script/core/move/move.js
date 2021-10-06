@@ -47,11 +47,14 @@
         this.OnRoomObjEnd=function(){
             
         }
+        this.Send=function(command){
+            app.Send(command)
+        }
         this.TryMove=function(step){
             if (!step){
                 step=this.Current
             }
-            app.Send(step.Command)
+            this.Send(step.Command)
         }
     }
     return Move
