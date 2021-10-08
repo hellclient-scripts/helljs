@@ -3,7 +3,6 @@
     let locate = Include("core/move/locate.js")
     let patrol = Include("core/move/patrol.js")
     let walk = Include("core/move/walk.js")
-    let drive = Include("core/move/drive.js")
     app.NewMove = function (mode, target, onFinish, data) {
         switch (mode) {
             case "locate":
@@ -13,10 +12,6 @@
                 return new patrol(mode, target, onFinish, data)
             case "walk":
                 return new walk(mode, target, onFinish, data)
-            case "ganbiao":
-                let w=new drive(mode, target, onFinish, data)
-                w.Command="gan biao che to "
-                return w
             default:
                 throw "app.Move:Mode[" + walk.Mode + "]无效"
         }
@@ -66,8 +61,17 @@
             app.Data.Move.Ignore=true
         }
     }
+    app.Core.OnMoveEnterBoat=function(name, output, wildcards){
+        if (app.Data.Move && !app.Data.Move.Paused && app.Data.Move.Current!=null) {
+            if (app.Data.Move.Current.Command.indexOf("yell boat")>=0){
+                app.Go("enter")
+            }
+        }
+
+    }
     app.Core.OnMoveSailEnd=function(name, output, wildcards){
-        app.Send("halt;out")
+        app.Send("halt")
+        app.Go("out ")
     }
     app.RegisterCallback("core.move.sail",function(){
         app.Raise("Waiting")

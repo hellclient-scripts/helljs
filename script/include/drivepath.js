@@ -1,5 +1,23 @@
 (function(){
     return {
+        "east": "%1east",
+        "south": "%1south",
+        "west": "%1west",
+        "north": "%1north",
+        "southeast": "%1southeast",
+        "southwest": "%1southwest",
+        "northeast": "%1northeast",
+        "northwest": "%1northwest",
+        "eastup": "%1eastup",
+        "eastdown": "%1eastdown",
+        "southup": "%1southup",
+        "southdown": "%1southdown",
+        "westup": "%1westup",
+        "westdownwd": "%1westdown",
+        "northup": "%1northup",
+        "northdown": "%1northdown",
+        "up": "%1up",
+        "down": "%1down",
         "e": "%1east",
         "s": "%1south",
         "w": "%1west",
@@ -40,5 +58,7 @@
         "d·": "%1down",
         "enter·": "%1enter",
         "out·": "%1out",
+        "yell boat。":"yell boat",
+        "#wait":"#wait"
     }
 })()

@@ -78,7 +78,10 @@
         str = ex
         p.command = str
         if (p.command.indexOf("goto") != -1) {
-            p.delay = 5
+            p.delay = 10
+        }
+        if (p.command.indexOf("yell boat") != -1) {
+            p.delay = 500
         }
         if (!_drivepath[p.command]) {
             p.excludetags.push("drive")
@@ -154,9 +157,9 @@
     app.RegisterCallback("info.mapper.load", function () {
         app.Info.Mapper.Load()
     })
-    app.RegisterAPI("GetPath", function (fr, tolist) {
+    app.RegisterAPI("GetPath", function (fr, tolist,fly) {
         app.Raise("PathInit")
-        var data = Mapper.getpath(fr, 1, tolist)
+        var data = Mapper.getpath(fr, fly, tolist)
         if (!data) {
             return null
         }

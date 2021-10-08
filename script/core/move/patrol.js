@@ -24,7 +24,7 @@
             this.Move()
         }
         this.Retry=function(){
-            world.DoAfterSpecial(0.5, 'App.Data.Move.RetryMove()', 12);
+            world.DoAfterSpecial(app.Vehicle.RetryInterval, 'App.Data.Move.RetryMove()', 12);
         }
         this.RetryMove=function(){
             this.TryMove()

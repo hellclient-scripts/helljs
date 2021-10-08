@@ -22,7 +22,14 @@
         this.tryExplore=function(data){
             world.EnableTimer("steptimeout",true)
             this.Current=data
-            App.Send(data.Command)
+            App.Go(data.Command)
+        }
+        this.RetryExplore=function(){
+            world.EnableTimer("steptimeout",false)
+            this.tryExplore(this.Current)
+        }
+        this.Retry=function(){
+            world.DoAfterSpecial(app.Vehicle.RetryInterval, 'App.Data.Move.RetryExplore()', 12);
         }
         this.OnRoomObjEnd=function(){
             world.EnableTimer("steptimeout",false)
@@ -46,6 +53,7 @@
             }
             let step=this.Context.Enter(app.Data.Room.Exits)
             if (step){
+                this.Current=step
                 this.tryExplore(step)
             }else{
                 this.Stop()
