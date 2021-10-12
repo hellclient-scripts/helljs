@@ -15,4 +15,8 @@
         }
         app.ExecuteTask(taskid,id,onFinish,onFail)
     }
+    app.RegisterCallback("core.produce.item",function(data){
+        app.Produce(data)
+    })
+    app.Bind("Response.core.produce","core.produce.item")
 })(App)
