@@ -1,1 +1,2 @@
-kaoya||kaoya||烤鸭||goods||27||buy kaoya from huoji||||
+gan liang||gan liang||干粮||goods||27||buy gan liang from xiao er||||
+shui dai||shui dai||水袋||goods||27||buy shui dai from xiao er||||
