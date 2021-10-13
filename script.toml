@@ -20,9 +20,10 @@ Channel = "zsz-self.jvs"
   Desc = "帐号ID"
   Intro = "****很重要，自己ID的英文名字"
 [[RequiredParams]]
-  Name = "num_cmds"
-  Desc = "每心跳命令数"
-  Intro = "每心跳内输出最多几个命令（偶数，可以围绕46上下调整，数值越大，越容易被雷劈）"
+  Name = "id_pass"
+  Desc = "门派缩写"
+  Intro = "门派缩写（有密道的门派要填）"
+
 [[RequiredParams]]
   Name = "id_weapon"
   Desc = "武器装备英文名（非必填）"

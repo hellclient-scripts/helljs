@@ -158,6 +158,15 @@
         app.Info.Mapper.Load()
     })
     app.RegisterAPI("GetPath", function (fr, tolist,fly) {
+        Mapper.flashtags()
+        Mapper.settag()
+        let idpass = world.GetVariable("id_pass");
+        if (idpass){
+            let tags=idpass.split(",")
+            tags.forEach(function(tag){
+                Mapper.settag(tag,true)
+            })
+        }
         app.Raise("PathInit")
         var data = Mapper.getpath(fr, fly, tolist)
         if (!data) {
