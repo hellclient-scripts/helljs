@@ -1,0 +1,69 @@
+alias s1 do qu 1 shui dai ,qu 1 gan liang,drink shui dai,eat gan liang,cun shui dai,cun gan liang
+alias s2 do yun regenerate,tuna 500
+alias s3 do qu 3 flawless chalcedony,qu 3 flawless metal,qu 3 flawless skull,qu 3 flawless fire,qu 3 flawless agate,qu 3 flawless diamond,qu 3 flawless wood,qu 3 flawless ice,qu 3 flawless jade,qu 3 flawless crystal
+alias s4 do combine flawless chalcedony & flawless chalcedony 2 & flawless chalcedony 3,combine flawless metal & flawless metal 2 & flawless metal 3,combine flawless skull & flawless skull 2 & flawless skull 3,combine flawless fire & flawless fire 2 & flawless fire 3,combine flawless agate & flawless agate 2 & flawless agate 3,combine flawless diamond & flawless diamond 2 & flawless diamond 3,combine flawless wood & flawless wood 2 & flawless wood 3,combine flawless ice & flawless ice 2 & flawless ice 3,combine flawless jade & flawless jade 2 & flawless jade 3,combine flawless crystal & flawless crystal 2 & flawless crystal 3
+alias s5 do cun flawless chalcedony,cun flawless metal,cun flawless skull,cun flawless fire,cun flawless agate,cun flawless diamond,cun flawless wood,cun flawless ice,cun flawless jade,cun flawless crystal
+alias s6 do cun flawless chalcedony,cun flawless metal,cun flawless skull,cun flawless fire,cun flawless agate,cun flawless diamond,cun flawless wood,cun flawless ice,cun flawless jade,cun flawless crystal
+alias s7 do cun flawless chalcedony,cun flawless metal,cun flawless skull,cun flawless fire,cun flawless agate,cun flawless diamond,cun flawless wood,cun flawless ice,cun flawless jade,cun flawless crystal
+alias s8 do cun flawless chalcedony,cun flawless metal,cun flawless skull,cun flawless fire,cun flawless agate,cun flawless diamond,cun flawless wood,cun flawless ice,cun flawless jade,cun flawless crystal
+alias s9 do qu 3 chalcedony,qu 3 perfect metal,qu 3 skull,qu 3 earth fire,qu 3 agate,qu 3 diamond,qu 3 perfect wood,qu 3 cold ice,qu 3 jade,qu 3 crystal
+alias s10 do combine chalcedony & chalcedony 2 & chalcedony 3,combine perfect metal & perfect metal 2 & perfect metal 3,combine skull & skull 2 & skull 3,combine earth fire & earth fire 2 & earth fire 3,combine agate & agate 2 & agate 3,combine diamond & diamond 2 & diamond 3,combine perfect wood & perfect wood 2 & perfect wood 3,combine cold ice & cold ice 2 & cold ice 3,combine jade & jade 2 & jade 3,combine crystal & crystal 2 & crystal 3
+alias s11 do cun chalcedony,cun perfect metal,cun skull,cun earth fire,cun agate,cun diamond,cun perfect wood,cun cold ice,cun jade,cun crystal
+alias s12 do cun chalcedony,cun perfect metal,cun skull,cun earth fire,cun agate,cun diamond,cun perfect wood,cun cold ice,cun jade,cun crystal
+alias s13 do cun chalcedony,cun perfect metal,cun skull,cun earth fire,cun agate,cun diamond,cun perfect wood,cun cold ice,cun jade,cun crystal
+alias s14 do cun chalcedony,cun perfect metal,cun skull,cun earth fire,cun agate,cun diamond,cun perfect wood,cun cold ice,cun jade,cun crystal
+alias s15 do qu 3 chipped chalcedony,qu 3 chipped metal,qu 3 chipped skull,qu 3 chipped fire,qu 3 chipped agate,qu 3 chipped diamond,qu 3 chipped wood,qu 3 chipped ice,qu 3 chipped jade,qu 3 chipped crystal
+alias s16 do combine chipped fire & chipped fire 2 & chipped fire 3,combine chipped agate & chipped agate 2 & chipped agate 3,combine chipped diamond & chipped diamond 2 & chipped diamond 3,combine chipped wood & chipped wood 2 & chipped wood 3,combine chipped ice & chipped ice 2 & chipped ice 3,combine chipped jade & chipped jade 2 & chipped jade 3,combine chipped crystal & chipped crystal 2 & chipped crystal 3,combine chipped skull & chipped skull 2 & chipped skull 3,combine chipped metal & chipped metal 2 & chipped metal 3,combine chipped chalcedony & chipped chalcedony 2 & chipped chalcedony 3
+alias s17 do cun chipped chalcedony,cun chipped metal,cun chipped skull,cun chipped fire,cun chipped agate,cun chipped diamond,cun chipped wood,cun chipped ice,cun chipped jade,cun chipped crystal
+alias s18 do cun chipped chalcedony,cun chipped metal,cun chipped skull,cun chipped fire,cun chipped agate,cun chipped diamond,cun chipped wood,cun chipped ice,cun chipped jade,cun chipped crystal
+alias s19 do cun chipped chalcedony,cun chipped metal,cun chipped skull,cun chipped fire,cun chipped agate,cun chipped diamond,cun chipped wood,cun chipped ice,cun chipped jade,cun chipped crystal
+alias s20 do cun chipped chalcedony,cun chipped metal,cun chipped skull,cun chipped fire,cun chipped agate,cun chipped diamond,cun chipped wood,cun chipped ice,cun chipped jade,cun chipped crystal
+alias s21 do cun magic chalcedony,cun magic metal,cun magic skull,cun magic fire,cun magic agate,cun magic diamond,cun magic wood,cun magic ice,cun magic jade,cun magic crystal
+alias s22 do qu 5 chipped magic stone
+alias s23 combine chipped magic stone & chipped magic stone 2 & chipped magic stone 3 & chipped magic stone 4 & chipped magic stone 5
+alias s24 do cun chipped magic stone,cun chipped magic stone,cun chipped magic stone,cun chipped magic stone,cun chipped magic stone,cun magic stone
+alias s25 do qu 5 chipped white silk
+alias s26 combine chipped white silk & chipped white silk 2 & chipped white silk 3 & chipped white silk 4 & chipped white silk 5
+alias s27 do cun chipped white silk,cun chipped white silk,cun chipped white silk,cun chipped white silk,cun chipped white silk,cun white silk
+alias cgodeye do 1 qu 1 magic jade,qu 1 magic diamond,qu 1 magic agate,qu 1 magic crystal
+alias cgodeye2 combine magic jade & magic diamond & magic agate & magic crystal
+alias csunsoul do 1 qu 1 magic ice,qu 1 magic metal,qu 1 magic wood,qu 1 magic crystal
+alias csunsoul2 combine magic ice & magic metal & magic wood & magic crystal
+alias cmoonsoul do 1 qu 1 magic fire,qu 1 magic chalcedony,qu 1 magic skull,qu 1 magic crystal
+alias cmoonsoul2 combine magic fire & magic chalcedony & magic skull & magic crystal
+alias cshinestone combine god eyes & moon soul & ruby
+alias ccolorstone combine god eyes & sun soul & sapphire
+alias cebook do qu 1 xian dan,qu 1 huohong xiandan,qu 1 shenli wan,qu 1 xisui dan
+alias cebook2 combine wuzi book & xian dan & huohong xiandan & shenli wan & xisui dan
+alias cxuanshi combine forging stone & jiuzhuan jindan
+scheme edit
+REPEAT
+s1
+s2
+s3
+s4
+s5
+s6
+s7
+s8
+s9
+s10
+s11
+s12
+s13
+s14
+s15
+s16
+s17
+s18
+s19
+s20
+s21
+s22
+s23
+s24
+s25
+s26
+s27
+LOOP
+.

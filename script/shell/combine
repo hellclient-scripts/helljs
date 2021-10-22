@@ -1,0 +1,28 @@
+function scheme(start,items){
+  let str=""
+  str+="alias s"+(start+0)+" do "
+  let qu=[]
+  for (let i=0;i<10;i++){
+  	qu.push("qu 3 "+items[i])
+  }
+  str+=qu.join(",")+"\n"
+  str+="alias s"+(start+1)+" do "
+  let combine=[]
+  for (let i=0;i<10;i++){
+  	combine.push("combine "+items[i]+" & "+items[i]+" 2 & "+items[i]+" 3")
+  }
+  str+=combine.join(",")+"\n"
+  let cun=[]
+  for (let i=0;i<10;i++){
+  		cun.push("cun "+items[i])
+  }
+  str+="alias s"+(start+2)+" do "+cun.join(",")+"\n"
+  str+="alias s"+(start+3)+" do "+cun.join(",")+"\n"
+  str+="alias s"+(start+4)+" do "+cun.join(",")+"\n"
+  str+="alias s"+(start+5)+" do "+cun.join(",")+"\n"
+  return str
+}
+scheme(3,"flawless chalcedony,flawless metal,flawless skull,flawless fire,flawless agate,flawless diamond,flawless wood,flawless ice,flawless jade,flawless crystal".split(","))
+scheme(9,"chalcedony,perfect metal,skull,earth fire,agate,diamond,perfect wood,cold ice,jade,crystal".split(","))
+scheme(15,"chipped chalcedony,chipped metal,chipped skull,chipped fire,chipped agate,chipped diamond,chipped wood,chipped ice,chipped jade,chipped crystal".split(","))
+
